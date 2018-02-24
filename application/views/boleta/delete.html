@@ -1,0 +1,29 @@
+$def with(boleta, message)
+<h3>
+    <a href="/boleta">Boleta</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_boleta" id="id_boleta" value="$boleta.id_boleta" />
+
+    <div class="form-group">
+    <label for="calificacion">Calificacion</label>
+    <input readonly id="calificacion" type="text" class="form-control" name="calificacion" size="30" value="$boleta.calificacion"/>
+</div><div class="form-group">
+    <label for="username">Id Usuario</label>
+    <input readonly id="username" type="text" class="form-control" name="username" size="30" value="$boleta.username"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Borrar</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

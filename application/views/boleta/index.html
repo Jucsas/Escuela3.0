@@ -1,0 +1,23 @@
+$def with(boleta)
+<h3>
+    <a href="/boleta">Boleta</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>Id Usuario</th>
+        <th>Calificación</th>
+        <th>Editar</th>
+        <th>Borrar</th>
+    </thead>
+    <tbody>
+        $for item in boleta:
+        <tr>
+            <td><a href='/boleta/view/$item.id_boleta'>$item.username</a></td>
+            <td><a href='/boleta/view/$item.id_boleta'>$item.calificacion</a></td>
+            <td><a href='/boleta/edit/$item.id_boleta'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/boleta/delete/$item.id_boleta'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

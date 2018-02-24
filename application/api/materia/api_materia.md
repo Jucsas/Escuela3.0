@@ -1,0 +1,1 @@
+'/api_materia/?', 'application.api.materia.api_materia.Api_materia',

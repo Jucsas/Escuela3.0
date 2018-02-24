@@ -1,0 +1,21 @@
+$def with(materia)
+<h3>
+    <a href="/materia">Materia</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>Materia</th>
+        <th>Editar</th>
+        <th>Borrar</th>
+    </thead>
+    <tbody>
+        $for item in materia:
+        <tr>
+            <td><a href='/materia/view/$item.id_materia'>$item.nombre</a></td>
+            <td><a href='/materia/edit/$item.id_materia'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/materia/delete/$item.id_materia'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

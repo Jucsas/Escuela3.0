@@ -1,0 +1,5 @@
+'/materia', 'application.controllers.materia.index.Index',
+'/materia/view/(.+)', 'application.controllers.materia.view.View',
+'/materia/edit/(.+)', 'application.controllers.materia.edit.Edit',
+'/materia/delete/(.+)', 'application.controllers.materia.delete.Delete',
+'/materia/insert', 'application.controllers.materia.insert.Insert',

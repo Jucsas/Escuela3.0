@@ -1,0 +1,5 @@
+'/boleta', 'application.controllers.boleta.index.Index',
+'/boleta/view/(.+)', 'application.controllers.boleta.view.View',
+'/boleta/edit/(.+)', 'application.controllers.boleta.edit.Edit',
+'/boleta/delete/(.+)', 'application.controllers.boleta.delete.Delete',
+'/boleta/insert', 'application.controllers.boleta.insert.Insert',
